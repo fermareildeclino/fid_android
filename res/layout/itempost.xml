@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- /************************************************************************************ -->
+<!--  * This code is part of Fermare il declino for android                              * -->
+<!--  * Copyright © 2012 ALI - Associazione Lavoro e Impresa per le Liberta' Economiche  * -->
+<!--  *   http://www.fermareildeclino.it info@fermareildeclino.it                        * -->
+<!--  *                                                                                  * -->
+<!--  * This program is free software; you can redistribute it and/or                    * -->
+<!--  * modify it under the terms of the GNU General Public License                      * -->
+<!--  * as published by the Free Software Foundation; either version 2                   * -->
+<!--  * of the License, or (at your option) any later version.                           * -->
+<!--  *                                                                                  * -->
+<!--  * This program is distributed in the hope that it will be useful,                  * -->
+<!--  * but WITHOUT ANY WARRANTY; without even the implied warranty of                   * -->
+<!--  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                    * -->
+<!--  * GNU General Public License for more details.                                     * -->
+<!--  *                                                                                  * -->
+<!--  * You should have received a copy of the GNU General Public License                * -->
+<!--  * along with this program; if not, write to the Free Software                      * -->
+<!--  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.  * -->
+<!--  ************************************************************************************ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp" >
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:minHeight="20dp"
+        android:text="Titolo"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/riassunto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titolo"
+        android:text="Testo" />
+
+    <TextView
+        android:id="@+id/autorelb"
+        style="@style/tinybold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/riassunto"
+        android:text="@string/lbautore" />
+    <TextView
+        android:id="@+id/date"
+        style="@style/tinybold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autorelb"
+        android:layout_alignBottom="@+id/autorelb"
+        android:layout_alignParentRight="true"
+        android:text="date" />
+    
+    <TextView
+        android:id="@+id/autore"
+        style="@style/tiny"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autorelb"
+        android:layout_alignBottom="@+id/autorelb"
+        android:layout_marginLeft="4dp"
+        android:layout_toLeftOf="@+id/date"
+        android:layout_toRightOf="@+id/autorelb"
+        android:text="autore" />
+
+
+</RelativeLayout>
